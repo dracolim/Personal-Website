@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -521,51 +521,63 @@
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">{Most Recent Work}</span>
 
-            <div class="portfolio__container container">
-                <div>
+            <div class="portfolio__container container swiper-container">
+                <div class='swiper-wrapper'>
                     <!-- project 1-->
-                    <div class="portfolio__content grid">
-                        <img src = 'assets/img/' alt = '' class="'portfolio__img">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src='assets/img/portfolio.png' alt='' class="portfolio__img">
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Mordern Pesonal Website</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with UI components and 
-                                animated interactions.
+                            <p class="portfolio__description">Website adaptable to all devices, with UI components and
+                                animated interactions. 
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <p style="text-decoration: underline">Tech Stack:</p>
+                                <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs, Bootstrap</p>
+                            <a href="http://localhost/Personal-Website/home.html" class="button button--flex button--small portfolio__button">
+                                Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- project 2-->
-                    <div class="portfolio__content grid">
-                        <img src = 'assets/img/' alt = '' class="'portfolio__img">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src='assets/img/EXPATacular.png' alt='' class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Mordern Pesonal Website</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with UI components and 
-                                animated interactions.
+                            <h3 class="portfolio__title">EXPATacular</h3>
+                            <p class="portfolio__description">
+                                For module IS216, my team and I developed an user interfaces with modern JavaScript frameworks, with HTML, CSS to come out with a website for Expats 
+                                to know more about Singapore before travelling here. We have integrated the website with RESTful APIs to search for 
+                                locations, currencies, and covid-19 statuses. 
+                                Modified existing NodeJS code and MongoDB cluster to move data from one system to
+                                another
+                                <p style="text-decoration: underline">Tech Stack:</p>
+                                <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs, Bootstrap</p>
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <a href="https://maars202.github.io/EXPATacular/index.html" class="button button--flex button--small portfolio__button">
+                                Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
 
                     <!-- project 3-->
-                    <div class="portfolio__content grid">
-                        <img src = 'assets/img/' alt = '' class="'portfolio__img">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src='assets/img/gin_thye.png' alt='' class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Mordern Pesonal Website</h3>
-                            <p class="portfolio__description">Website adaptable to all devices, with UI components and 
-                                animated interactions.
+                            <h3 class="portfolio__title">Newly Designed website prototype for Gin Thye</h3>
+                            <p class="portfolio__description">My team and I designed a website for Gin Thye to help digitally transform their company. In this prototype,
+                                 we have included both customer's and staff's perspective. 
+                                 There are features such as VR, Calendar, analytics that 
+                                 we have designed to provide efficient workflow with aid of digital tools and a customer centric approach.
+                                 <p style="text-decoration: underline">Tech Stack:</p>
+                                <p style="margin-bottom: .75rem">Figma</p>
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
+                            <a href="https://www.figma.com/community/file/1137304123210583451" class="button button--flex button--small portfolio__button">
+                                Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
@@ -598,10 +610,10 @@
     <!--==================== SCROLL TOP ====================-->
 
 
-    <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!--==================== MAIN JS ====================-->
+    <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
 </body>
 
