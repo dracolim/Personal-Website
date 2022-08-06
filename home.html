@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -41,7 +41,7 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
+                        <a href="#qualification" class="nav__link">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
                         </a>
                     </li>
@@ -59,6 +59,9 @@
                 <i class="uil uil-times nav__close" id='nav-close'></i>
             </div>
             <div class="nav__btns">
+                <!-- Theme Change Button-->
+                <i class="uil uil-moon change-theme" id='theme-button'></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -69,7 +72,7 @@
     <!--MAIN -->
     <main class="main">
         <!-- HOME -->
-        <section class="home section" id="home">
+        <section class="home__section" id="home">
             <div class='home__container container grid'>
                 <div class="home__content grid">
                     <div class="home__social">
@@ -77,8 +80,6 @@
                             class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a href="" target='_blank' class="home__social-icon">
-                            <i class="uil uil-dribbble"></i>
                         </a>
                         <a href="https://github.com/dracolim" target='_blank' class="home__social-icon">
                             <i class="uil uil-github-alt"></i>
@@ -104,7 +105,7 @@
                     </div>
                     <div class='home__data'>
                         <h1 class="home__title">Hello World, I am Cheryl.</h1>
-                        <h3 class="home__subtitle">| Frontend Developer | Data Analyst | Designer |</h3>
+                        <h3 class="home__subtitle">| Frontend Developer | Data Analyst | UI/UX Designer |</h3>
                         <p class='home__description'>
                             <!-- HOME DESCRIPTION -->
                             Knowledge in web design and development, producing quality work</p>
@@ -115,7 +116,7 @@
                 </div>
 
                 <div class="home__scroll">
-                    <a href="" class="home__scroll-button button--flex">
+                    <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -148,7 +149,7 @@
                         </div>
 
                         <div>
-                            <span class="about__info-title">2</span>
+                            <span class="about__info-title">3</span>
                             <span class="about__info-name">Completed <br> project</span>
                         </div>
 
@@ -316,7 +317,7 @@
         </section>
 
         <!--QUALIFICATION -->
-        <section class="qualification section">
+        <section class="qualification section" id='qualification'>
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">{My Personal Journey}</span>
 
@@ -511,17 +512,13 @@
             </div>
         </section>
 
-        <!-- SERVICES -->
-        <section class="services section" id="services">
-
-        </section>
 
         <!-- PORTFOLIO -->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">{Most Recent Work}</span>
 
-            <div class="portfolio__container container swiper-container">
+            <div class="portfolio__container container swiper">
                 <div class='swiper-wrapper'>
                     <!-- project 1-->
                     <div class="portfolio__content grid swiper-slide">
@@ -530,11 +527,13 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Mordern Pesonal Website</h3>
                             <p class="portfolio__description">Website adaptable to all devices, with UI components and
-                                animated interactions. 
+                                animated interactions.
                             </p>
                             <p style="text-decoration: underline">Tech Stack:</p>
-                                <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs, Bootstrap</p>
-                            <a href="http://localhost/Personal-Website/home.html" class="button button--flex button--small portfolio__button">
+                            <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs,
+                                Bootstrap</p>
+                            <a href="http://localhost/Personal-Website/home.html"
+                                class="button button--flex button--small portfolio__button">
                                 Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -548,15 +547,19 @@
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">EXPATacular</h3>
                             <p class="portfolio__description">
-                                For module IS216, my team and I developed an user interfaces with modern JavaScript frameworks, with HTML, CSS to come out with a website for Expats 
-                                to know more about Singapore before travelling here. We have integrated the website with RESTful APIs to search for 
-                                locations, currencies, and covid-19 statuses. 
+                                For module IS216, my team and I developed an user interfaces with modern JavaScript
+                                frameworks, with HTML, CSS to come out with a website for Expats
+                                to know more about Singapore before travelling here. We have integrated the website with
+                                RESTful APIs to search for
+                                locations, currencies, and covid-19 statuses.
                                 Modified existing NodeJS code and MongoDB cluster to move data from one system to
                                 another
                                 <p style="text-decoration: underline">Tech Stack:</p>
-                                <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs, Bootstrap</p>
+                                <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs,
+                                    Bootstrap</p>
                             </p>
-                            <a href="https://maars202.github.io/EXPATacular/index.html" class="button button--flex button--small portfolio__button">
+                            <a href="https://maars202.github.io/EXPATacular/index.html"
+                                class="button button--flex button--small portfolio__button">
                                 Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -569,45 +572,127 @@
 
                         <div class="portfolio__data">
                             <h3 class="portfolio__title">Newly Designed website prototype for Gin Thye</h3>
-                            <p class="portfolio__description">My team and I designed a website for Gin Thye to help digitally transform their company. In this prototype,
-                                 we have included both customer's and staff's perspective. 
-                                 There are features such as VR, Calendar, analytics that 
-                                 we have designed to provide efficient workflow with aid of digital tools and a customer centric approach.
-                                 <p style="text-decoration: underline">Tech Stack:</p>
+                            <p class="portfolio__description">My team and I designed a website for Gin Thye to help
+                                digitally transform their company. In this prototype,
+                                we have included both customer's and staff's perspective.
+                                There are features such as VR, Calendar, analytics that
+                                we have designed to provide efficient workflow with aid of digital tools and a customer
+                                centric approach.
+                                <p style="text-decoration: underline">Tech Stack:</p>
                                 <p style="margin-bottom: .75rem">Figma</p>
                             </p>
-                            <a href="https://www.figma.com/community/file/1137304123210583451" class="button button--flex button--small portfolio__button">
+                            <a href="https://www.figma.com/community/file/1137304123210583451"
+                                class="button button--flex button--small portfolio__button">
                                 Project Link
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
 
-        <!-- PROJECT IN MIND -->
-        <section class="project section">
 
-        </section>
-
-        <!--TESTIMONIAL -->
-        <section class="testimonial section">
-
-        </section>
-
-        <!--==================== CONTACT ME ====================-->
+        <!--CONTACT ME -->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">{I'd Would Love To Hear From You}</span>
 
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-pin-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Where to find me</h3>
+                            <span class="contact__subtitle">Singapore</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email Me At</h3>
+                            <span class="contact__subtitle">cheryllimbeiling@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Messgae</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Messgae
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
+    <!-- FOOTER -->
     <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Cheryl</h1>
+                </div>
 
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/cheryl-lim-3a9a98201/" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/dracolim" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
+    <!--SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
 
     <!-- SWIPER JS -->
