@@ -530,8 +530,7 @@
                                 animated interactions.
                             </p>
                             <p style="text-decoration: underline">Tech Stack:</p>
-                            <p style="margin-bottom: .75rem">MongoDB, CSS, HTML, Vue.js, Node.js, Restful APIs,
-                                Bootstrap</p>
+                            <p style="margin-bottom: .75rem">CSS, HTML, Node.js, PHP</p>
                             <a href="http://localhost/Personal-Website/home.html"
                                 class="button button--flex button--small portfolio__button">
                                 Project Link
@@ -629,30 +628,34 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="assets/php/contact-form.php" method='POST' id='contact-form' class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input name='name' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input name='email' type="email" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <input name='project' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Messgae</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="message" cols="0" rows="7" class="form-control contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
-                                Send Messgae
+                            <!--<input type='submit' class="form-control button button--flex" value='Send Message'>
+                            <a href="#" class="form-control button button--flex">
+                                Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </a>-->
+                            <button type = 'submit' class="form-control button button--flex" style = "border: none;">
+                                <span style= 'font-family: sans-serif'>Send Message<i class="uil uil-message button__icon"></i></span>
+                            </button>
                         </div>
                     </div>
                 </form>
