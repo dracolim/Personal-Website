@@ -628,23 +628,23 @@
                     </div>
                 </div>
 
-                <form action="assets/php/contact-form.php" method='POST' id='contact-form' class="contact__form grid">
+                <form onsubmit = 'sendEmail(); reset(); return false;' method='POST' id='contact-form' class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input name='name' type="text" class="form-control contact__input">
+                            <label for="name" class="contact__label">Name</label>
+                            <input name='name' id = 'name' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input name='email' type="email" class="form-control contact__input">
+                            <label for="email" class="contact__label">Email</label>
+                            <input name='email' id = 'email' type="email" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input name='project' type="text" class="form-control contact__input">
+                            <label for="project" class="contact__label">Project</label>
+                            <input name='project' id = 'project' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Messgae</label>
-                            <textarea name="message" cols="0" rows="7" class="form-control contact__input"></textarea>
+                            <label for="message" class="contact__label">Messgae</label>
+                            <textarea name="message" id='message' cols="0" rows="7" class="form-control contact__input"></textarea>
                         </div>
 
                         <div>
@@ -703,6 +703,36 @@
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Smtp js-->
+    <script src ='https://smtpjs.com/v3/smtp.js'></script>
+
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "cheryllimbeiling@gmail.com",
+                Password : "545EA6EC3AF6E2E2B56AD32C330EE5838FCB",
+                To : 'cheryllimbeiling@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : 'Personal Website Form: ' + document.getElementById('project').value,
+                Body : document.getElementById('message').value
+        }).then(
+        message => alert(message)
+        );
+
+            Email.send({
+                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+                To : 'cheryllimbeiling@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : 'Personal Website Form: ' + 'Name: ' + document.getElementById('name').value + 'Project: ' + document.getElementById('project').value,
+                Body : document.getElementById('message').value
+        }).then(
+        message => alert(message)
+        );
+    }
+    
+    </script>
 </body>
 
 </html>

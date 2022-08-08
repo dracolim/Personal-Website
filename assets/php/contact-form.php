@@ -1,23 +1,34 @@
 <?php
-    $name = (isset($_POST['name']) ? $_POST['name'] : '');
-    $visitor_email = (isset($_POST['email']) ? $_POST['email'] : '');
-    $message = (isset($_POST['message']) ? $_POST['message'] : '');
-    $project = (isset($_POST['project']) ? $_POST['project'] : '');
+$message_sent= false;
+if(isset($_POST['email']) ? $_POST['email'] : ''){
 
-    $email_from = 'lancelimzuyong9@gmail.com';
-    $email_subject = 'Personal Website Form';
+    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
+    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $email= isset($_POST['email']) ? $_POST['email'] : '';
+    $project = isset($_POST['project']) ? $_POST['project'] : '';
+    $message = isset($_POST['message']) ? $_POST['message'] : '';
+
+    $email_header = "From: ".$name."<".$email.">\r\n";
+    $email_subject = 'Personal Website Form'; 
     $email_body = "Name: $name.\n".
-                    "Email: $visitor_email.\n".  
+                    "Email: $email.\n".  
                         "Project: $project.\n".   
                             "Message: $message.\n";
 
     $to = "cheryllimbeiling@gmail.com";
 
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
-    
-    mail($to,$email_subject,$email_body,$headers);
+    mail($to,$email_subject,$email_body,$email_header) or die("Error!");
 
-    header("Location: /Personal-Website/home.html");
+    $message_sent = true;
+
+    header('Location: http://localhost/Personal-Website/');
+    exit;
+    }
+    else{
+        $message_sent= false;
+    }
+}
+
+
 ?>
