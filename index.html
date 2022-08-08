@@ -627,8 +627,8 @@
                         </div>
                     </div>
                 </div>
-
-                <form onsubmit = 'sendEmail(); reset(); return false;' method='POST' id='contact-form' class="contact__form grid">
+<!--onsubmit = 'sendEmail(); reset(); return false;' method='POST'-->
+                <form action="https://formsubmit.co/ebb81c3ff164269cdc9cfe2649820065" method = "POST" id='contact-form' class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="name" class="contact__label">Name</label>
@@ -646,6 +646,8 @@
                             <label for="message" class="contact__label">Messgae</label>
                             <textarea name="message" id='message' cols="0" rows="7" class="form-control contact__input"></textarea>
                         </div>
+
+                        <input type = 'hidden' name = '_next' value = 'https://main.dsyiuiw5eduhv.amplifyapp.com'>
 
                         <div>
                             <!--<input type='submit' class="form-control button button--flex" value='Send Message'>
@@ -710,22 +712,10 @@
     <script>
         function sendEmail(){
             Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "cheryllimbeiling@gmail.com",
-                Password : "545EA6EC3AF6E2E2B56AD32C330EE5838FCB",
+                SecureToken : "2d0b01f9-5c70-4adf-b8ea-f0f3ae21cafc",
                 To : 'cheryllimbeiling@gmail.com',
                 From : document.getElementById('email').value,
-                Subject : 'Personal Website Form: ' + document.getElementById('project').value,
-                Body : document.getElementById('message').value
-        }).then(
-        message => alert(message)
-        );
-
-            Email.send({
-                SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-                To : 'cheryllimbeiling@gmail.com',
-                From : document.getElementById('email').value,
-                Subject : 'Personal Website Form: ' + 'Name: ' + document.getElementById('name').value + 'Project: ' + document.getElementById('project').value,
+                Subject : 'Personal Website Form: ' + document.getElementById('name').value + ', Project: ' + document.getElementById('project').value,
                 Body : document.getElementById('message').value
         }).then(
         message => alert(message)
