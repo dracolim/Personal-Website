@@ -86,20 +86,13 @@
                         </a>
                     </div>
                     <div class="home__img">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
                             </mask>
                             <g mask="url(#mask0)">
-                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="8" href="assets/img/perfil.png" />
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" x="44" y="45" href="assets/img/perfil.png"/>
                             </g>
                         </svg>
                     </div>
@@ -135,12 +128,12 @@
                 <div class="about__date">
                     <p class="about__description">
                         <!-- INTRODUCTION -->
-                        I am a second-year student studying at Singapore Management University majoring is
-                        digital cloud solution and data science and analytics with an interest in Big Data and front-end
-                        web development.
-                        In addition to exploring the area of big data that I am immensely passionate about, I aspire to
-                        learn more about its related fields,
-                        such as predictive analytics and artificial intelligence.
+                        I am a third-year student studying at Singapore Management University, 
+                        majoring in digital cloud solutions and data science and analytics 
+                        with an interest in Big Data and front-end development. 
+                        In addition to exploring the area of big data that I am immensely passionate about, 
+                        I aspire to learn more about its related fields, such as predictive analytics and artificial intelligence.
+                        I am a keen learner and seek opportunities to develop my skills further.  
                     </p>
                     <div class="about__info">
                         <div>
@@ -149,7 +142,7 @@
                         </div>
 
                         <div>
-                            <span class="about__info-title">3</span>
+                            <span class="about__info-title">5</span>
                             <span class="about__info-name">Completed <br> project</span>
                         </div>
 
@@ -344,7 +337,7 @@
                     <!-- EDUCATION -->
                     <div class="qualification__content qualification__active" data-content id='education'>
 
-                        <!-- Qualification 1 -->
+                        <!-- education 1 -->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Information Systems</h3>
@@ -363,7 +356,7 @@
                             </div>
                         </div>
 
-                        <!-- Qualification 2 -->
+                        <!-- education 2 -->
                         <div class="qualification__data">
                             <div></div>
 
@@ -384,7 +377,7 @@
                             </div>
                         </div>
 
-                        <!-- Qualification 3 -->
+                        <!-- education 3 -->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Science</h3>
@@ -408,7 +401,7 @@
                     <!-- EXPERIENCE -->
                     <div class="qualification__content" data-content id='work'>
 
-                        <!-- Qualification 1 -->
+                        <!-- experience 1 -->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Data Analyst Intern</h3>
@@ -512,15 +505,159 @@
             </div>
         </section>
 
+        <!--WORK-->
+        <section class="work section" id='portfolio'>
+            <h2 class="section__title">My Portfolio</h2>
+            <span class="section__subtitle">{My Recent Works}</span>
 
-        <!-- PORTFOLIO -->
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class="work__item" data-filter='.web'> Web & Software Development</span>
+                <span class="work__item" data-filter='.design'>UI/UX Design</span>
+                <!--<span class="work__item" data-filter=".data">Data Visualisations</span>-->
+            </div>
+
+            <div class="work__container container grid " style='gap: 3rem;'>
+                <div class="work__card mix web">
+                    <img src="assets/img/portfolio.png" alt="" class="work__img" style='margin-bottom: 1rem;'>
+                    <h3 class="work__title" style='margin-bottom: .5rem;'>Personal Website</h3>
+
+                    <a href="" class="work__button">
+                        Demo <i class="uil uil-arrow-right work__icon"></i>
+                    </a>
+
+                    <span class = 'services__button'>
+                        See more <i class="uil uil-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class='services__modal'>
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class='services__modal-title'>Personal Website</h3>
+                            <p class="services__modal-description">
+                                Website adaptable to all devices, with UI components and
+                                animated interactions. Deployed it on AWS Amplify
+                                <p>Tech Stack:
+                                    <iconify-icon icon="vscode-icons:file-type-html" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="vscode-icons:file-type-css" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="logos:javascript" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="logos:aws-amplify" width="35" height="35"></iconify-icon>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/bot.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Crypto Telegram Bot</h3>
+                    <a href="https://github.com/dracolim/Crypto-Telegram-Bot" class="work__button">
+                        Demo <i class="uil uil-arrow-right work__icon"></i>
+                    </a>
+
+                    <span class = 'services__button'>
+                        See more <i class="uil uil-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class='services__modal'>
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class='services__modal-title'>Crypto Telegram Bot</h3>
+                            <p class="services__modal-description">
+                                Crypto-Telegram-Bot allows you to get crypto updates such as news,
+                                price, supply , volume and percentage change.
+                                <p>Tech Stack:
+                                    <iconify-icon icon="vscode-icons:file-type-python" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="logos:heroku-icon" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="carbon:api-1" width="35" height="35"></iconify-icon>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/img/EXPATacular.png" alt="" class="work__img">
+
+                    <h3 class="work__title">EXPATacular</h3>
+                    <a href="https://maars202.github.io/EXPATacular/index.html" class="work__button">
+                        Demo <i class="uil uil-arrow-right work__icon"></i>
+                    </a>
+
+                    <span class = 'services__button'>
+                        See more <i class="uil uil-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class='services__modal'>
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class='services__modal-title'>EXPATacular</h3>
+                            <p class="services__modal-description">
+                                For module IS216, my team and I developed user interfaces with modern JavaScript
+                                frameworks, with HTML, CSS to come out with a website for Expats
+                                to know more about Singapore before travelling here. We have integrated the website with
+                                RESTful APIs to search for
+                                locations, currencies, and covid-19 statuses.
+                                Modified existing NodeJS code and MongoDB cluster to move data from one system to
+                                another
+                                <p>Tech Stack:
+                                    <iconify-icon icon="vscode-icons:file-type-html" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="vscode-icons:file-type-css" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="logos:vue" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="vscode-icons:file-type-node" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="logos:bootstrap" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="carbon:api-1" width="35" height="35"></iconify-icon>
+                                    <iconify-icon icon="vscode-icons:file-type-mongo" width="35" height="35"></iconify-icon>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/gin_thye.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Hi-Fidelty Website Prototype</h3>
+                    <a href="https://www.figma.com/community/file/1137304123210583451" class="work__button">
+                        Demo <i class="uil uil-arrow-right work__icon"></i>
+                    </a>
+
+                    <span class = 'services__button'>
+                        See more <i class="uil uil-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class='services__modal'>
+                        <div class="services__modal-content">
+                            <i class="uil uil-times services__modal-close"></i>
+                            <h3 class='services__modal-title'>Gin Thye's Website</h3>
+                            <p class="services__modal-description">
+                                For module IS215, my team and I designed a website for Gin Thye to help
+                                digitally transform their company. In this prototype,
+                                we have included both customer's and staff's perspective.
+                                There are features such as VR, Calendar, analytics that
+                                we have designed to provide efficient workflow with aid of digital tools and a customer
+                                centric approach.
+                                <p>Tech Stack:
+                                    <iconify-icon icon="logos:figma" width="35" height="35"></iconify-icon>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PORTFOLIO OPTION 2
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
             <span class="section__subtitle">{Most Recent Work}</span>
 
             <div class="portfolio__container container swiper">
                 <div class='swiper-wrapper'>
-                    <!-- project 1-->
+                    
+                    PROJECT 1
                     <div class="portfolio__content grid swiper-slide">
                         <img src='assets/img/portfolio.png' alt='' class="portfolio__img">
 
@@ -539,7 +676,7 @@
                         </div>
                     </div>
 
-                    <!-- project 2-->
+                    PROJECT 2
                     <div class="portfolio__content grid swiper-slide">
                         <img src='assets/img/EXPATacular.png' alt='' class="portfolio__img">
 
@@ -565,7 +702,7 @@
                         </div>
                     </div>
 
-                    <!-- project 3-->
+                    PROJECT 3
                     <div class="portfolio__content grid swiper-slide">
                         <img src='assets/img/gin_thye.png' alt='' class="portfolio__img">
 
@@ -589,7 +726,7 @@
                     </div>
                 </div>
 
-                <!-- Add Arrows -->
+                ADD ARROWS
                 <div class="swiper-button-next">
                     <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
                 </div>
@@ -597,11 +734,12 @@
                     <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
                 </div>
 
-                <!-- Add Pagination -->
+                ADD PAGINATION 
                 <div class="swiper-pagination"></div>
 
             </div>
         </section>
+    -->
 
 
         <!--CONTACT ME -->
@@ -627,36 +765,33 @@
                         </div>
                     </div>
                 </div>
-<!--onsubmit = 'sendEmail(); reset(); return false;' method='POST'-->
-                <form action="https://formsubmit.co/ebb81c3ff164269cdc9cfe2649820065" method = "POST" id='contact-form' class="contact__form grid">
+                <form action="https://formsubmit.co/ebb81c3ff164269cdc9cfe2649820065" method="POST" id='contact-form'
+                    class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="name" class="contact__label">Name</label>
-                            <input name='name' id = 'name' type="text" class="form-control contact__input">
+                            <input name='name' id='name' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="email" class="contact__label">Email</label>
-                            <input name='email' id = 'email' type="email" class="form-control contact__input">
+                            <input name='email' id='email' type="email" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="project" class="contact__label">Project</label>
-                            <input name='project' id = 'project' type="text" class="form-control contact__input">
+                            <input name='project' id='project' type="text" class="form-control contact__input">
                         </div>
                         <div class="contact__content">
                             <label for="message" class="contact__label">Message</label>
-                            <textarea name="message" id='message' cols="0" rows="7" class="form-control contact__input"></textarea>
+                            <textarea name="message" id='message' cols="0" rows="7"
+                                class="form-control contact__input"></textarea>
                         </div>
 
-                        <input type = 'hidden' name = '_next' value = 'https://main.dsyiuiw5eduhv.amplifyapp.com'>
+                        <input type='hidden' name='_next' value='https://main.dsyiuiw5eduhv.amplifyapp.com'>
 
                         <div>
-                            <!--<input type='submit' class="form-control button button--flex" value='Send Message'>
-                            <a href="#" class="form-control button button--flex">
-                                Send Message
-                                <i class="uil uil-message button__icon"></i>
-                            </a>-->
-                            <button type = 'submit' class="form-control button button--flex" style = "border: none;">
-                                <span style= 'font-family: sans-serif'>Send Message<i class="uil uil-message button__icon"></i></span>
+                            <button type='submit' class="form-control button button--flex" style="border: none;">
+                                <span style='font-family: sans-serif'>Send Message<i
+                                        class="uil uil-message button__icon"></i></span>
                             </button>
                         </div>
                     </div>
@@ -699,6 +834,10 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
+    <!-- MIXITUP FILTER -->
+    <script src='assets/js/mixitup.min.js'></script>
 
     <!-- SWIPER JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -707,21 +846,21 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Smtp js-->
-    <script src ='https://smtpjs.com/v3/smtp.js'></script>
+    <script src='https://smtpjs.com/v3/smtp.js'></script>
 
     <script>
-        function sendEmail(){
+        function sendEmail() {
             Email.send({
-                SecureToken : "2d0b01f9-5c70-4adf-b8ea-f0f3ae21cafc",
-                To : 'cheryllimbeiling@gmail.com',
-                From : document.getElementById('email').value,
-                Subject : 'Personal Website Form: ' + document.getElementById('name').value + ', Project: ' + document.getElementById('project').value,
-                Body : document.getElementById('message').value
-        }).then(
-        message => alert(message)
-        );
-    }
-    
+                SecureToken: "2d0b01f9-5c70-4adf-b8ea-f0f3ae21cafc",
+                To: 'cheryllimbeiling@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: 'Personal Website Form: ' + document.getElementById('name').value + ', Project: ' +
+                    document.getElementById('project').value,
+                Body: document.getElementById('message').value
+            }).then(
+                message => alert(message)
+            );
+        }
     </script>
 </body>
 
