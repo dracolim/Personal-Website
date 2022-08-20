@@ -95,25 +95,25 @@ modalClose.forEach((mc) => {
 
 /* QUALIFICATION TABS */
 const tabs = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content]')
+        tabContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target)
 
-        tabContents.forEach(tabContent =>{
+        tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
-            /*console.log(tabContent)*/
         })
+
         target.classList.add('qualification__active')
-        
+
         tab.forEach(tab => {
             tab.classList.remove('qualification__active')
         })
-
         tab.classList.add('qualification__active')
     })
 })
+
 
 /* PORTFOLIO SWIPER  */
 let swiper = new Swiper('.portfolio__container', {
