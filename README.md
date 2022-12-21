@@ -5,4 +5,4 @@
 - Deployed it on AWS Amplify
 
 **Link To Personal Website:** 
-https://main.dsyiuiw5eduhv.amplifyapp.com/
+https://www.cherylmalfoy.com/
