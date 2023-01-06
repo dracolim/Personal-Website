@@ -695,6 +695,10 @@ img {
   color: var(--first-color); 
 }
 
+.active-Q{
+  color: var(--first-color); 
+}
+
 
 /* services modal under work */
 .services__button{
