@@ -512,7 +512,7 @@ img {
 }
 
 .skills__js{
-  width: 70%;
+  width: 80%;
 }
 
 .skills__react{
@@ -521,6 +521,10 @@ img {
 
 .skills__python{
   width: 80%;
+}
+
+.skills__r{
+  width: 70%;
 }
 
 .skills__sql{
