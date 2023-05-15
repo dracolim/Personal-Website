@@ -112,7 +112,7 @@
                     </div>
                     <div class='home__data'>
                         <h1 class="home__title">Hello World, I am Cheryl.</h1>
-                        <h3 class="home__subtitle">| Software Enginner |</h3>
+                        <h3 class="home__subtitle">| Software Engineer |</h3>
                         <p class='home__description'>
                             <!-- HOME DESCRIPTION -->
                             Knowledge in web design and development, producing quality work</p>
@@ -786,7 +786,7 @@
                                 courses. It also enables the staff to view and CRUD their learning journey. We also
                                 applied agile methods such as Scrum to build the software and used techniques such as
                                 Pair Programming, C4 architecture, code refactoring, Test-Driven Development(TDD) and
-                                Continuous Integration (CI) throughout the project.We scored an A- for this project.
+                                Continuous Integration (CI) throughout the project We scored an A- for this project.
                                 <p>Tech Stack:
                                     <iconify-icon icon="logos:flask" style="color: green;" width="35" height="35">
                                     </iconify-icon>
@@ -953,17 +953,7 @@
                             <i class="uil uil-times services__modal-close"></i>
                             <h3 class='services__modal-title'>Vendor Management System</h3>
                             <p class="services__modal-description">
-                                My team and I created a web application, called Vendor Management System, for IS442. It
-                                includes editable, fully customizable forms with suggestive input, form export,
-                                signature, and optimized UI/UX for Quantum Leap. We developed this application to
-                                address the challenges that Quantum Leap faced in onboarding vendors and subcontractors,
-                                and collecting and retaining necessary forms for record-keeping. Our Vendor Management
-                                System streamlines the vendor management process, facilitates efficient onboarding, and
-                                ensures prompt notification of any updates or changes via email. The customizable forms,
-                                along with form export and signature functionalities, enhance record-keeping and
-                                compliance. Ultimately, the Vendor Management System provides a user-friendly interface
-                                and improves the overall experience for both Quantum Leap and their
-                                vendors/subcontractors. <p>Tech Stack:
+                                My team and I developed a web application called Vendor Management System for IS442, which offers customizable forms with suggestive input, signature, form export, and a user-friendly UI/UX optimized for Quantum Leap. The purpose of the application is to address the difficulties that Quantum Leap faces when onboarding vendors and subcontractors, as well as collecting and retaining necessary forms for record-keeping. Our Vendor Management System simplifies the vendor management process, streamlines onboarding, and ensures prompt notification of any updates or changes through email. The customizable forms, along with form export and signature functionalities, improve record-keeping and compliance. Ultimately, the Vendor Management System enhances the overall experience for both Quantum Leap and their vendors/subcontractors. We received an A for this project.  <p>Tech Stack:
                                     <iconify-icon icon="vscode-icons:file-type-html" width="35" height="35">
                                     </iconify-icon>
                                     <iconify-icon icon="vscode-icons:file-type-css" width="35" height="35">
@@ -974,6 +964,7 @@
                                     </iconify-icon>
                                     <iconify-icon icon="logos:mysql" style="color: green;" width="35" height="35">
                                     </iconify-icon>
+                                    <iconify-icon icon="devicon:java-wordmark" width="35" height="35"></iconify-icon>
                                 </p>
                             </p>
                         </div>
@@ -1056,10 +1047,7 @@
                     <img src="assets/img/poster.png" alt="" class="work__img" >
 
                     <h3 class="work__title">FYP Poster</h3>
-                    <a href="https://www.figma.com/community/file/1137304123210583451" class="work__button">
-                        Demo <i class="uil uil-arrow-right work__icon"></i>
-                    </a>
-
+                    
                     <span class='services__button'>
                         See more <i class="uil uil-arrow-right services__icon"></i>
                     </span>
@@ -1221,10 +1209,10 @@
                                 class="form-control contact__input"></textarea>
                         </div>
 
-                        <input type='hidden' name='_next' value='https://main.dsyiuiw5eduhv.amplifyapp.com'>
+                        <input type='hidden' name='_next' value='https://www.cherylmalfoy.com/'>
 
                         <div>
-                            <button type='submit' class="form-control button button--flex" style="border: none;">
+                            <button type='submit' style = "cursor: pointer; border: none;" class="form-control button button--flex" >
                                 <span style='font-family: sans-serif'>Send Message<i
                                         class="uil uil-message button__icon"></i></span>
                             </button>
@@ -1283,20 +1271,10 @@
     <!-- Smtp js-->
     <script src='https://smtpjs.com/v3/smtp.js'></script>
 
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "2d0b01f9-5c70-4adf-b8ea-f0f3ae21cafc",
-                To: 'cheryllimbeiling@gmail.com',
-                From: document.getElementById('email').value,
-                Subject: 'Personal Website Form: ' + document.getElementById('name').value + ', Project: ' +
-                    document.getElementById('project').value,
-                Body: document.getElementById('message').value
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
+    <!--email js-->
+    <script src='assets/js/email.js'></script>
+
+    
 </body>
 
 </html>
